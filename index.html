@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Сайты для бизнеса в Томске — портфолио</title>
+  <meta name="description" content="Лендинги для местного бизнеса с заявками в Telegram: барбершопы, автосервисы, салоны красоты, клиники. Готово за 2–3 дня.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg: #f5f4f0; --ink: #1b1b1f; --muted: #6b6b73; --line: #e2e0da; --accent: #3a5bd9; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 16px/1.6 'Manrope', system-ui, sans-serif; color: var(--ink); background: var(--bg); }
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 72px 16px 80px; }
+    h1 { font-size: clamp(34px, 5vw, 56px); line-height: 1.08; margin: 0 0 18px; letter-spacing: -.02em; }
+    .lead { font-size: 19px; color: var(--muted); max-width: 660px; margin: 0 0 40px; }
+    .perks { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 56px; padding: 0; list-style: none; }
+    .perks li { padding: 9px 16px; background: #fff; border: 1px solid var(--line); border-radius: 999px; font-weight: 600; font-size: 14px; }
+    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+    .card { display: block; text-decoration: none; color: inherit; background: #fff; border: 1px solid var(--line); border-radius: 22px; overflow: hidden; transition: transform .25s, box-shadow .25s; }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 20px 50px rgba(0,0,0,.08); }
+    .card__top { height: 200px; display: flex; align-items: flex-end; padding: 22px; font-size: 30px; font-weight: 800; letter-spacing: -.01em; }
+    .card__body { padding: 20px 22px 24px; }
+    .card__body p { margin: 0 0 12px; color: var(--muted); }
+    .card__tags { display: flex; gap: 6px; flex-wrap: wrap; }
+    .card__tags span { font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 999px; background: var(--bg); }
+    .t1 { background: linear-gradient(135deg, #2a221b, #141210); color: #d39a5c; }
+    .t2 { background: repeating-linear-gradient(-45deg, #ffc21a 0 22px, #1d1f22 22px 44px); color: #fff; text-shadow: 0 2px 10px #000; }
+    .t3 { background: linear-gradient(135deg, #efe6f5, #f6d7e0); color: #8a5fa8; }
+    .t4 { background: linear-gradient(135deg, #dff5ef, #b9e6da); color: #0e8270; }
+    .how { margin-top: 70px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .how div { padding: 26px; background: #fff; border-radius: 18px; border: 1px solid var(--line); }
+    .how b { display: block; font-size: 30px; color: var(--accent); }
+    .how h2 { font-size: 19px; margin: 8px 0 6px; }
+    .how p { margin: 0; color: var(--muted); font-size: 15px; }
+    footer { margin-top: 60px; color: var(--muted); font-size: 14px; }
+    @media (max-width: 760px) { .grid, .how { grid-template-columns: 1fr; } .wrap { padding-top: 48px; } }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>Сайты для бизнеса,<br>которые приносят заявки</h1>
+    <p class="lead">Делаю лендинги для салонов, барбершопов, автосервисов и клиник. Заявки с сайта сразу приходят в Telegram администратору. Нажмите на пример, чтобы открыть его. Каждый сайт удобно смотреть и с телефона.</p>
+    <ul class="perks">
+      <li>Готово за 2–3 дня</li>
+      <li>Заявки в Telegram</li>
+      <li>Адаптив под телефоны</li>
+      <li>Карта, отзывы, цены</li>
+      <li>Помощь с хостингом и доменом</li>
+    </ul>
+
+    <div class="grid">
+      <a class="card" href="barbershop/index.html">
+        <div class="card__top t1">Барбершоп «Кедр»</div>
+        <div class="card__body"><p>Тёмный премиальный стиль, прайс с записью в один клик, выбор мастера.</p><div class="card__tags"><span>барбершоп</span><span>запись к мастеру</span></div></div>
+      </a>
+      <a class="card" href="autoservice/index.html">
+        <div class="card__top t2">Автосервис «Мотор 70»</div>
+        <div class="card__body"><p>Калькулятор стоимости ТО, сезонная акция, этапы работы.</p><div class="card__tags"><span>автосервис</span><span>калькулятор</span></div></div>
+      </a>
+      <a class="card" href="beauty/index.html">
+        <div class="card__top t3">Салон «Сирень»</div>
+        <div class="card__body"><p>Нежный стиль, услуги по вкладкам, подарочные сертификаты.</p><div class="card__tags"><span>салон красоты</span><span>сертификаты</span></div></div>
+      </a>
+      <a class="card" href="stomatology/index.html">
+        <div class="card__top t4">Стоматология «Мята»</div>
+        <div class="card__body"><p>Услуги с ценами, врачи, FAQ, всё необходимое по закону о медрекламе.</p><div class="card__tags"><span>клиника</span><span>медицина</span></div></div>
+      </a>
+    </div>
+
+    <section class="how">
+      <div><b>1</b><h2>Вы рассказываете о бизнесе</h2><p>Услуги, цены, фото и контакты. Можно просто прислать ссылку на 2ГИС или ВКонтакте.</p></div>
+      <div><b>2</b><h2>Я делаю сайт за 2–3 дня</h2><p>Показываю результат по ссылке, вношу правки до тех пор, пока вам всё не понравится.</p></div>
+      <div><b>3</b><h2>Запускаем</h2><p>Подключаю домен, хостинг и бота для заявок в Telegram. Объясняю, как менять цены.</p></div>
+    </section>
+
+    <footer>Все примеры — демо-сайты с вымышленными названиями.</footer>
+  </main>
+</body>
+</html>

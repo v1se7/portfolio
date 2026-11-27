@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Салон красоты «Сирень» в Томске — маникюр, волосы, брови, косметология</title>
+  <meta name="description" content="Салон красоты «Сирень» в Томске: маникюр и педикюр, стрижки и окрашивание, брови и ресницы, уход за лицом. Онлайн-запись, подарочные сертификаты.">
+
+  <meta property="og:title" content="Салон красоты «Сирень» — Томск">
+  <meta property="og:description" content="Красота без спешки. Онлайн-запись и подарочные сертификаты.">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%238a5fa8'/%3E%3Cg fill='%23fff'%3E%3Ccircle cx='32' cy='22' r='7'/%3E%3Ccircle cx='22' cy='32' r='7'/%3E%3Ccircle cx='42' cy='32' r='7'/%3E%3Ccircle cx='32' cy='42' r='7'/%3E%3C/g%3E%3Ccircle cx='32' cy='32' r='4' fill='%23f2c6d2'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-phone="+7 (3822) 00-00-00">
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo" aria-label="Салон красоты Сирень — на главную">
+        <svg class="logo__mark" viewBox="0 0 64 64" aria-hidden="true"><g fill="currentColor"><circle cx="32" cy="20" r="9"/><circle cx="20" cy="32" r="9"/><circle cx="44" cy="32" r="9"/><circle cx="32" cy="44" r="9"/></g><circle cx="32" cy="32" r="5" fill="#f2c6d2"/></svg>
+        <span class="logo__text">Сирень<small>салон красоты</small></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Основное меню">
+        <a href="#services">Услуги</a>
+        <a href="#masters">Мастера</a>
+        <a href="#gift">Сертификаты</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+        <a href="tel:+73822000000" class="nav__phone-mobile">+7 (3822) 00-00-00</a>
+      </nav>
+
+      <div class="header__actions">
+        <a href="tel:+73822000000" class="header__phone">+7 (3822) 00-00-00<small>ежедневно 9:00–21:00</small></a>
+        <a href="#booking" class="btn btn--primary btn--sm">Записаться</a>
+        <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===================== ПЕРВЫЙ ЭКРАН ===================== -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow">Салон красоты в Томске</p>
+          <h1>Красота <em>без спешки</em> — время только для вас</h1>
+          <p class="hero__lead">Маникюр, волосы, брови и уход за лицом в уютном салоне в историческом центре. Стерильные инструменты, премиальная косметика и мастера, которые слышат ваши пожелания.</p>
+          <div class="hero__cta">
+            <a href="#booking" class="btn btn--primary btn--lg">Записаться онлайн</a>
+            <a href="#services" class="btn btn--ghost btn--lg">Услуги и цены</a>
+          </div>
+          <div class="hero__rating">
+            <span class="hero__avatars" aria-hidden="true"><i></i><i></i><i></i></span>
+            <p><strong>4,9 из 5</strong> — 850+ отзывов на Яндекс Картах</p>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__arch hero__arch--big"><span class="photo-note">Фото интерьера</span></div>
+          <div class="hero__arch hero__arch--small"><span class="photo-note">Фото работы</span></div>
+          <div class="hero__badge"><strong>−15%</strong><span>на первый визит</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== УСЛУГИ (вкладки) ===================== -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <p class="kicker">Услуги и цены</p>
+          <h2>Выберите направление</h2>
+        </div>
+
+        <div class="tabs" data-tabs>
+          <div class="tabs__list" role="tablist" aria-label="Направления услуг">
+            <button role="tab" id="tab-nails" aria-controls="panel-nails" aria-selected="true">Ногти</button>
+            <button role="tab" id="tab-hair" aria-controls="panel-hair" aria-selected="false" tabindex="-1">Волосы</button>
+            <button role="tab" id="tab-brows" aria-controls="panel-brows" aria-selected="false" tabindex="-1">Брови и ресницы</button>
+            <button role="tab" id="tab-face" aria-controls="panel-face" aria-selected="false" tabindex="-1">Лицо</button>
+          </div>
+
+          <div class="tabs__panel" role="tabpanel" id="panel-nails" aria-labelledby="tab-nails">
+            <ul class="menu">
+              <li><span>Маникюр с покрытием гель-лак</span><i></i><b>1 900 ₽</b></li>
+              <li><span>Маникюр без покрытия</span><i></i><b>1 000 ₽</b></li>
+              <li><span>Наращивание ногтей</span><i></i><b>3 200 ₽</b></li>
+              <li><span>Педикюр с покрытием</span><i></i><b>2 600 ₽</b></li>
+              <li><span>Дизайн (1 ноготь)</span><i></i><b>от 100 ₽</b></li>
+              <li><span>Маникюр + педикюр в 4 руки</span><i></i><b>4 200 ₽</b></li>
+            </ul>
+            <a href="#booking" class="btn btn--primary" data-pick="Ногти">Записаться на ногти</a>
+          </div>
+          <div class="tabs__panel" role="tabpanel" id="panel-hair" aria-labelledby="tab-hair" hidden>
+            <ul class="menu">
+              <li><span>Женская стрижка</span><i></i><b>от 1 800 ₽</b></li>
+              <li><span>Окрашивание в один тон</span><i></i><b>от 3 500 ₽</b></li>
+              <li><span>Сложное окрашивание (airtouch, шатуш)</span><i></i><b>от 7 500 ₽</b></li>
+              <li><span>Укладка</span><i></i><b>от 1 500 ₽</b></li>
+              <li><span>Уход-восстановление</span><i></i><b>от 2 500 ₽</b></li>
+              <li><span>Вечерняя причёска</span><i></i><b>от 3 000 ₽</b></li>
+            </ul>
+            <a href="#booking" class="btn btn--primary" data-pick="Волосы">Записаться на волосы</a>
+          </div>
+          <div class="tabs__panel" role="tabpanel" id="panel-brows" aria-labelledby="tab-brows" hidden>
+            <ul class="menu">
+              <li><span>Коррекция и окрашивание бровей</span><i></i><b>1 300 ₽</b></li>
+              <li><span>Долговременная укладка бровей</span><i></i><b>2 200 ₽</b></li>
+              <li><span>Ламинирование ресниц</span><i></i><b>2 400 ₽</b></li>
+              <li><span>Наращивание ресниц (классика)</span><i></i><b>2 600 ₽</b></li>
+              <li><span>Наращивание ресниц (2D–3D)</span><i></i><b>3 100 ₽</b></li>
+            </ul>
+            <a href="#booking" class="btn btn--primary" data-pick="Брови и ресницы">Записаться на брови</a>
+          </div>
+          <div class="tabs__panel" role="tabpanel" id="panel-face" aria-labelledby="tab-face" hidden>
+            <ul class="menu">
+              <li><span>Комбинированная чистка лица</span><i></i><b>3 500 ₽</b></li>
+              <li><span>Пилинг</span><i></i><b>от 2 800 ₽</b></li>
+              <li><span>Уходовая процедура по типу кожи</span><i></i><b>3 200 ₽</b></li>
+              <li><span>Массаж лица</span><i></i><b>2 000 ₽</b></li>
+            </ul>
+            <a href="#booking" class="btn btn--primary" data-pick="Лицо">Записаться на уход</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ПРЕИМУЩЕСТВА ===================== -->
+    <section class="section section--blush">
+      <div class="container">
+        <div class="features" data-reveal>
+          <div class="feature"><span class="feature__icon">✧</span><h3>Стерильность</h3><p>Трёхэтапная обработка инструментов, крафт-пакеты вскрываются при вас.</p></div>
+          <div class="feature"><span class="feature__icon">❀</span><h3>Премиум-косметика</h3><p>Работаем на Kapous, Davines, Luxio — только сертифицированные материалы.</p></div>
+          <div class="feature"><span class="feature__icon">☕</span><h3>Уют</h3><p>Чай, кофе и десерт, пока работает мастер. Удобные кресла и пледы.</p></div>
+          <div class="feature"><span class="feature__icon">♡</span><h3>Гарантия</h3><p>Если покрытие сколется за 7 дней — исправим бесплатно.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== МАСТЕРА ===================== -->
+    <section class="section" id="masters">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <p class="kicker">Команда</p>
+          <h2>Наши мастера</h2>
+        </div>
+        <div class="masters" data-reveal>
+          <article class="master"><div class="master__photo master__photo--1"><span>ВК</span></div><h3>Виктория</h3><p>Топ-мастер маникюра · 7 лет</p></article>
+          <article class="master"><div class="master__photo master__photo--2"><span>АЛ</span></div><h3>Алина</h3><p>Колорист-стилист · 9 лет</p></article>
+          <article class="master"><div class="master__photo master__photo--3"><span>ДС</span></div><h3>Дарья</h3><p>Бровист и лешмейкер · 5 лет</p></article>
+          <article class="master"><div class="master__photo master__photo--4"><span>ЕН</span></div><h3>Екатерина</h3><p>Косметолог-эстетист · 8 лет</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== РАБОТЫ ===================== -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <p class="kicker">Портфолио</p>
+          <h2>Работы мастеров</h2>
+        </div>
+        <div class="gallery" data-reveal>
+          <figure class="shot shot--1"><span class="photo-note">Маникюр</span></figure>
+          <figure class="shot shot--2"><span class="photo-note">Окрашивание</span></figure>
+          <figure class="shot shot--3"><span class="photo-note">Брови</span></figure>
+          <figure class="shot shot--4"><span class="photo-note">Ресницы</span></figure>
+          <figure class="shot shot--5"><span class="photo-note">Укладка</span></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== СЕРТИФИКАТЫ ===================== -->
+    <section class="section section--tight" id="gift">
+      <div class="container">
+        <div class="gift">
+          <div class="gift__card" aria-hidden="true">
+            <span class="gift__logo">Сирень</span>
+            <span class="gift__sum">5 000 ₽</span>
+            <span class="gift__label">подарочный сертификат</span>
+          </div>
+          <div class="gift__text">
+            <p class="kicker">Подарок, который точно понравится</p>
+            <h2>Подарочные сертификаты</h2>
+            <p>На любую сумму от 1 000 ₽ или конкретную услугу. Красивая открытка в конверте или электронный сертификат в мессенджер за 5 минут. Действует 6 месяцев.</p>
+            <a href="#booking" class="btn btn--primary btn--lg" data-pick="Подарочный сертификат">Заказать сертификат</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ОТЗЫВЫ ===================== -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <p class="kicker">Отзывы</p>
+          <h2>Что говорят гостьи</h2>
+        </div>
+        <div class="reviews" data-reveal>
+          <blockquote class="review"><p>«Хожу к Виктории на маникюр уже два года. Покрытие держится 3–4 недели, а форма всегда идеальная. И очень приятная атмосфера!»</p><footer><strong>Анастасия</strong><span>★★★★★ · Яндекс Карты</span></footer></blockquote>
+          <blockquote class="review"><p>«Алина сделала airtouch — именно то, что я показывала на фото. Волосы после окрашивания мягкие, без желтизны.»</p><footer><strong>Ксения</strong><span>★★★★★ · 2ГИС</span></footer></blockquote>
+          <blockquote class="review"><p>«Подарила маме сертификат на уход за лицом. Она в восторге и уже записалась на курс. Спасибо, девочки!»</p><footer><strong>Мария</strong><span>★★★★★ · ВКонтакте</span></footer></blockquote>
+        </div>
+        <p class="demo-note">Отзывы-примеры для демо. На реальном сайте — настоящие отзывы или виджет Яндекс Карт / 2ГИС.</p>
+      </div>
+    </section>
+
+    <!-- ===================== ЗАПИСЬ ===================== -->
+    <section class="section section--booking" id="booking">
+      <div class="container booking">
+        <div class="booking__text">
+          <p class="kicker">Онлайн-запись</p>
+          <h2>Запишитесь <em>в пару кликов</em></h2>
+          <p>Оставьте контакты — администратор перезвонит в течение 15 минут и подберёт удобное время и мастера.</p>
+          <ul class="booking__list">
+            <li>−15% на первый визит</li>
+            <li>Напоминание о записи накануне</li>
+            <li>Бесплатный перенос за 3 часа</li>
+          </ul>
+        </div>
+
+        <form class="form" id="booking-form" novalidate>
+          <div class="form__field">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" name="name" placeholder="Как к вам обращаться" autocomplete="name" required>
+          </div>
+          <div class="form__field">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" inputmode="tel" required>
+          </div>
+          <div class="form__row">
+            <div class="form__field">
+              <label for="service">Направление</label>
+              <select id="service" name="service" data-label="Услуга">
+                <option>Ногти</option>
+                <option>Волосы</option>
+                <option>Брови и ресницы</option>
+                <option>Лицо</option>
+                <option>Подарочный сертификат</option>
+              </select>
+            </div>
+            <div class="form__field">
+              <label for="time">Удобное время</label>
+              <select id="time" name="time" data-label="Время">
+                <option>Любое</option>
+                <option>Утро (9–12)</option>
+                <option>День (12–17)</option>
+                <option>Вечер (17–21)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form__trap" aria-hidden="true">
+            <label for="website">Не заполняйте это поле</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <label class="form__consent">
+            <input type="checkbox" name="consent" required>
+            <span>Я даю согласие на обработку персональных данных и принимаю <a href="privacy.html" target="_blank">политику конфиденциальности</a></span>
+          </label>
+
+          <button type="submit" class="btn btn--primary btn--lg btn--block">Записаться</button>
+          <p class="form__error" id="form-error" role="alert"></p>
+
+          <div class="form__success" id="form-success" hidden>
+            <div class="form__success-icon">✓</div>
+            <h3>Спасибо!</h3>
+            <p>Администратор перезвонит вам в течение 15 минут.</p>
+            <button type="button" class="btn btn--ghost btn--sm" id="form-again">Хорошо</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===================== КОНТАКТЫ ===================== -->
+    <section class="section" id="contacts">
+      <div class="container contacts">
+        <div class="contacts__info">
+          <p class="kicker">Контакты</p>
+          <h2>Ждём вас в гости</h2>
+          <dl class="contacts__list">
+            <div><dt>Адрес</dt><dd>г. Томск, ул. Красноармейская, д. 00<br>1 этаж, отдельный вход</dd></div>
+            <div><dt>Телефон</dt><dd><a href="tel:+73822000000">+7 (3822) 00-00-00</a></dd></div>
+            <div><dt>Режим работы</dt><dd>Ежедневно 9:00–21:00</dd></div>
+          </dl>
+          <div class="contacts__messengers">
+            <a href="#" class="chip">Telegram</a>
+            <a href="#" class="chip">WhatsApp</a>
+            <a href="#" class="chip">ВКонтакте</a>
+          </div>
+        </div>
+        <div class="contacts__map">
+          <iframe src="https://yandex.ru/map-widget/v1/?ll=84.959637%2C56.469774&z=15&pt=84.959637%2C56.469774%2Cpm2vvm" title="Карта проезда к салону" loading="lazy" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__bottom">
+      <p>© <span data-year>2026</span> Салон красоты «Сирень», Томск</p>
+      <p><a href="privacy.html">Политика конфиденциальности</a></p>
+      <p class="footer__demo">Демо-сайт. Салон вымышленный.</p>
+    </div>
+  </footer>
+
+  <a href="tel:+73822000000" class="call-fab" aria-label="Позвонить в салон">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
